@@ -65,13 +65,15 @@ int main(int argc, char *argv[])
                     std::cout << GetLastErrorAsString() << "\n";
                     return -4;
                 }
-                std::cout << "done :D" << "\n";
+                std::cout << "done :D" << "\n"; 
+                return 1;
             
             }
         
         }
 
     }
+    std::cout << "Couldn't find signature :(. Make sure you are using the right executable and send a issue to the dev if you are having trouble\n";
     
 }
 
